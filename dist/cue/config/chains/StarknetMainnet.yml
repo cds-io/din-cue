@@ -1,0 +1,95 @@
+name: starknet
+description: Decentralized, permissionless and scalable Layer-2 network protocol developed by StarkWare for the Ethereum network.
+version: 1.0.0
+flavor: mainnet
+rpc_uri: starknet://mainnet
+slug: StarknetMainnet
+caps: 1073741822
+methods:
+  - name: starknet_addDeclareTransaction
+    ns: write
+    bit: 1
+  - name: starknet_addDeployAccountTransaction
+    ns: write
+    bit: 2
+  - name: starknet_addInvokeTransaction
+    ns: write
+    bit: 3
+  - name: starknet_blockHashAndNumber
+    ns: node
+    bit: 4
+  - name: starknet_blockNumber
+    ns: node
+    bit: 5
+  - name: starknet_call
+    ns: node
+    bit: 6
+  - name: starknet_chainId
+    ns: node
+    bit: 7
+  - name: starknet_estimateFee
+    ns: node
+    bit: 8
+  - name: starknet_estimateMessageFee
+    ns: node
+    bit: 9
+  - name: starknet_getBlockTransactionCount
+    ns: node
+    bit: 10
+  - name: starknet_getBlockWithReceipts
+    ns: node
+    bit: 11
+  - name: starknet_getBlockWithTxHashes
+    ns: node
+    bit: 12
+  - name: starknet_getBlockWithTxs
+    ns: node
+    bit: 13
+  - name: starknet_getClass
+    ns: node
+    bit: 14
+  - name: starknet_getClassAt
+    ns: node
+    bit: 15
+  - name: starknet_getClassHashAt
+    ns: node
+    bit: 16
+  - name: starknet_getEvents
+    ns: node
+    bit: 17
+  - name: starknet_getNonce
+    ns: node
+    bit: 18
+  - name: starknet_getStateUpdate
+    ns: node
+    bit: 19
+  - name: starknet_getStorageAt
+    ns: node
+    bit: 20
+  - name: starknet_getTransactionByBlockIdAndIndex
+    ns: node
+    bit: 21
+  - name: starknet_getTransactionByHash
+    ns: node
+    bit: 22
+  - name: starknet_getTransactionReceipt
+    ns: node
+    bit: 23
+  - name: starknet_getTransactionStatus
+    ns: node
+    bit: 24
+  - name: starknet_simulateTransactions
+    ns: trace
+    bit: 25
+  - name: starknet_specVersion
+    ns: node
+    bit: 26
+  - name: starknet_syncing
+    ns: node
+    bit: 27
+  - name: starknet_traceBlockTransactions
+    ns: trace
+    bit: 28
+  - name: starknet_traceTransaction
+    ns: trace
+    bit: 29

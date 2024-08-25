@@ -1,0 +1,33 @@
+{
+  "name": "rpc-definitions",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "make build"
+        ],
+        "cwd": "conf/rpc",
+        "parallel": false,
+        "outputs": [
+          "{projectRoot}/output/**/*.yml",
+          "{workspaceRoot}/dist/conf/rpc/**/*.yml"
+        ]
+      },
+      "inputs": [
+        "{projectRoot}/cue/**/*.cue"
+      ]
+    },
+    "clean": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "rm -rf ../../dist/rpc",
+          "rm -rf output"
+        ],
+        "cwd": "conf/rpc"
+      }
+    }
+  }
+}

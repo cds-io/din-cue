@@ -1,0 +1,27 @@
+name: Falafel
+services:
+  ethereum:
+    mainnet:
+      network_uri: ethereum://mainnet
+      endpoint_details:
+        url: https://eth.rpc.greasy-goodness.cloud:443/key
+      caps: 27021597764223006
+      methods:
+        - name: debug_traceBlockByHash
+          ns: debug
+          bit: 1
+        - name: debug_traceBlockByNumber
+          ns: debug
+          bit: 2
+        - name: debug_traceCall
+          ns: debug
+          bit: 3
+        - name: debug_traceTransaction
+          ns: debug
+          bit: 4
+        - name: trace_block
+          ns: trace
+          bit: 53
+        - name: trace_transaction
+          ns: trace
+          bit: 54

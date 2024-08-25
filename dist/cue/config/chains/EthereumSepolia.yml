@@ -1,0 +1,176 @@
+name: ethereum
+description: Ethereum Sepolia test network
+version: 1.0.0
+flavor: sepolia
+rpc_uri: ethereum://sepolia
+slug: EthereumSepolia
+caps: 144115188075855870
+methods:
+  - name: debug_traceBlockByHash
+    ns: debug
+    bit: 1
+  - name: debug_traceBlockByNumber
+    ns: debug
+    bit: 2
+  - name: debug_traceCall
+    ns: debug
+    bit: 3
+  - name: debug_traceTransaction
+    ns: debug
+    bit: 4
+  - name: eth_accounts
+    ns: eth
+    bit: 5
+  - name: eth_blockNumber
+    ns: eth
+    bit: 6
+  - name: eth_call
+    ns: eth
+    bit: 7
+  - name: eth_chainId
+    ns: eth
+    bit: 8
+  - name: eth_coinbase
+    ns: eth
+    bit: 9
+  - name: eth_createAccessList
+    ns: eth
+    bit: 10
+  - name: eth_estimateGas
+    ns: eth
+    bit: 11
+  - name: eth_feeHistory
+    ns: eth
+    bit: 12
+  - name: eth_gasPrice
+    ns: eth
+    bit: 13
+  - name: eth_getBalance
+    ns: eth
+    bit: 14
+  - name: eth_getBlockByHash
+    ns: eth
+    bit: 15
+  - name: eth_getBlockByNumber
+    ns: eth
+    bit: 16
+  - name: eth_getBlockReceipts
+    ns: eth
+    bit: 17
+  - name: eth_getBlockTransactionCountByHash
+    ns: eth
+    bit: 18
+  - name: eth_getBlockTransactionCountByNumber
+    ns: eth
+    bit: 19
+  - name: eth_getCode
+    ns: eth
+    bit: 20
+  - name: eth_getFilterS.anges
+    ns: filter
+    bit: 21
+  - name: eth_getLogs
+    ns: eth
+    bit: 22
+  - name: eth_getProof
+    ns: eth
+    bit: 23
+  - name: eth_getStorageAt
+    ns: eth
+    bit: 24
+  - name: eth_getTransactionByBlockHashAndIndex
+    ns: eth
+    bit: 25
+  - name: eth_getTransactionByBlockNumberAndIndex
+    ns: eth
+    bit: 26
+  - name: eth_getTransactionByHash
+    ns: eth
+    bit: 27
+  - name: eth_getTransactionCount
+    ns: eth
+    bit: 28
+  - name: eth_getTransactionReceipt
+    ns: eth
+    bit: 29
+  - name: eth_getUncleByBlockHashAndIndex
+    ns: eth
+    bit: 30
+  - name: eth_getUncleByBlockNumberAndIndex
+    ns: eth
+    bit: 31
+  - name: eth_getUncleCountByBlockHash
+    ns: eth
+    bit: 32
+  - name: eth_getUncleCountByBlockNumber
+    ns: eth
+    bit: 33
+  - name: eth_getWork
+    ns: eth
+    bit: 34
+  - name: eth_hashrate
+    ns: eth
+    bit: 35
+  - name: eth_maxPriorityFeePerGas
+    ns: eth
+    bit: 36
+  - name: eth_mining
+    ns: eth
+    bit: 37
+  - name: eth_newBlockFilter
+    ns: filter
+    bit: 38
+  - name: eth_newFilter
+    ns: filter
+    bit: 39
+  - name: eth_newPendingTransactionFilter
+    ns: filter
+    bit: 40
+  - name: eth_protocolVersion
+    ns: eth
+    bit: 41
+  - name: eth_sendRawTransaction
+    ns: eth
+    bit: 42
+  - name: eth_sendTransaction
+    ns: eth
+    bit: 43
+  - name: eth_sign
+    ns: eth
+    bit: 44
+  - name: eth_submitWork
+    ns: eth
+    bit: 45
+  - name: eth_subscribe
+    ns: subscribe
+    bit: 46
+  - name: eth_syncing
+    ns: eth
+    bit: 47
+  - name: eth_uninstallFilter
+    ns: filter
+    bit: 48
+  - name: eth_unsubscribe
+    ns: subscribe
+    bit: 49
+  - name: net_listening
+    ns: eth
+    bit: 50
+  - name: net_peerCount
+    ns: eth
+    bit: 51
+  - name: net_version
+    ns: eth
+    bit: 52
+  - name: trace_block
+    ns: trace
+    bit: 53
+  - name: trace_transaction
+    ns: trace
+    bit: 54
+  - name: web3_clientVersion
+    ns: eth
+    bit: 55
+  - name: web3_sha3
+    ns: eth
+    bit: 56

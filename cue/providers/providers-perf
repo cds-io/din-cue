@@ -1,0 +1,13 @@
+CUE: {
+	Unifications: 74
+	Disjuncts:    112
+	Conjuncts:    180
+	Freed:        101
+	Reused:       86
+	Allocs:       16
+	Retained:     13
+}
+Go: {
+	AllocBytes:   28503664824
+	AllocObjects: 287209154
+}
