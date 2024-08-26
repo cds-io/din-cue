@@ -8,8 +8,8 @@ import "encoding/yaml"
 
 // Define the structure of arguments
 args: {
-	target_yml_dir: string | *"../../build/conf/chains" @tag(target_yml_dir)
-	target_sol_dir: string | *"../../build/sol"         @tag(target_sol_dir)
+	target_yml_dir: string | *"./build/conf/chains" @tag(target_yml_dir)
+	target_sol_dir: string | *"./build/sol"         @tag(target_sol_dir)
 }
 
 // Iterate over the result structure and generate tasks

@@ -1,12 +1,14 @@
 package providers
 
 import "encoding/yaml"
+
 import "tool/file"
+
 import "text/template"
 
 args: {
-    target_sol_dir: string | *"../../build/sol/providers" @tag(target_sol_dir)
-    target_yml_dir: string | *"../../build/conf/providers" @tag(target_yml_dir)
+	target_sol_dir: string | *"./build/sol/providers"  @tag(target_sol_dir)
+	target_yml_dir: string | *"./build/conf/providers" @tag(target_yml_dir)
 }
 
 command: make: {
@@ -29,4 +31,3 @@ command: make: {
 		}
 	}
 }
-
