@@ -1,10 +1,6 @@
 # cue/tests/Makefile
 SHELL := /bin/bash
-PWD := $(CURDIR)
-RPC_ROOT_DIR := $(shell dirname $(shell dirname $(PWD)))
-MONO_ROOT_DIR := $(shell dirname $(shell dirname $(RPC_ROOT_DIR)))
-
-include $(MONO_ROOT_DIR)/common.mk
+include ../../common.mk
 
 YML_FILES := $(wildcard *.yml)
 
